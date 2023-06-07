@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.section {
+    padding: 74px 0;
+}
+
+.title {
+    font-size: 1.125rem;
+    margin-bottom: 40px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    color: #ec7532;
+    border-bottom: 1px solid #d8d8d8;
+    position: relative;
+}
+
+.title::after {
+    display: block;
+    width: 125px;
+    height: 4px;
+    content: "";
+    background-image: linear-gradient(to right, #fbbd61, #ec7532);
+    margin-top: 20px;
+}
+
+.title--white {
+    color: white;
+    border-color: #333;
+}
+
+/* header */
+header {
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header p {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+header .navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#Movienabar .navbar-nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#Movienabar .navbar-nav .nav-item .nav-link {
+    color: white;
+    padding: 24px 24px;
+    line-height: 0.8em;
+    letter-spacing: 3px;
+}
+
+.line::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    display: block;
+    /* #fbbd61,#ec7532 */
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    box-shadow: 0 0 20px 0 #fbbd61;
+    transition: all 0.5s;
+}
+
+.line:hover::after {
+    width: 100%;
+}
+
+.line.active::after {
+    width: 100%;
+}
+
+
+
+/* carousel */
+#MoviecarouselID {
+    height: 650px;
+}
+
+#MoviecarouselID .carousel-inner {
+    height: 100%;
+}
+
+#MoviecarouselID .carousel-item:nth-child(1) {
+    background-image: url(./img/hero-1.jpg);
+}
+
+#MoviecarouselID .carousel-item:nth-child(2) {
+    background-image: url(./img/hero-2.jpg);
+}
+
+#MoviecarouselID .carousel-item:nth-child(3) {
+    background-image: url(./img/hero-3.jpg);
+}
+
+#MoviecarouselID .carousel-item {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#MoviecarouselID .carousel-caption {
+    text-align: left;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#MoviecarouselID .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+    opacity: 1;
+    background-clip: border-box;
+    box-sizing: border-box;
+}
+
+#MoviecarouselID .carousel-indicators li.active {
+    background-color: white;
+}
+
+#MoviecarouselID .carousel-indicators {
+    justify-content: flex-start;
+    left: 38%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#MoviecarouselID .carousel-caption p:first-child {
+    font-size: 0.875rem;
+    color: #fbbd61;
+    letter-spacing: 2px;
+    margin: 0;
+    animation-delay: 0.5s;
+}
+
+#MoviecarouselID .carousel-caption h2 {
+    font-size: 3.25rem;
+    letter-spacing: 3px;
+}
+
+#MoviecarouselID .carousel-caption p {
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+}
+
+#MoviecarouselID .carousel__trailer .carousel__age {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+    padding: 15px 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    line-height: 48px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#MoviecarouselID .carousel__trailer button {
+    color: white;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    border: none;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    padding: 12px 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+#MoviecarouselID .carousel__trailer button i,
+#MoviecarouselID .carousel__trailer button span {
+    position: relative;
+    z-index: 1;
+}
+
+#MoviecarouselID .carousel__trailer button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    display: block;
+    background-color: #ec7532;
+    transform: skewX(30deg) translateX(-110%);
+    transition: all 0.75s;
+}
+
+#MoviecarouselID .carousel__trailer button:hover::before {
+    opacity: 1;
+    transform: skewX(30deg) translateX(-1%);
+}
+
+/* new in */
+.newIn__img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.newIn__overlay {
+    transform: skewX(30deg) translateX(-150%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to bottom, #fbbd61, #ec7532);
+    opacity: 0.9;
+    /* transform: skewX(30deg) translateX(-25%); */
+    transition: all 0.5s;
+}
+.newIn__img:hover .newIn__overlay {
+    transform: skewX(30deg) translateX(-25%);
+}
+.newIn__play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+
+    transition: all 0.5s;
+}
+.newIn__play i {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+.newIn__play i:hover {
+    transform: scale(0.9);
+}
+.newIn__play a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+.newIn__img:hover .newIn__play {
+    opacity: 1;
+}
+.newIn__title {
+    text-align: center;
+}
+.newIn__title h3 {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin: 1rem 0;
+}
+.newIn__title i {
+    color: #fbbd61;
+}
