@@ -441,3 +441,25 @@ header .navbar {
 .comingsoon__video:hover i {
     transform: translate(-50%, -50%) scale(0.9);
 }
+/* movie list */
+.movielist{
+    background-color: #101010;
+}
+.movielisr__item{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.movielist__overplay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #101010;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+.movielist__overplay:hover{
+    opacity: 0;
+}
