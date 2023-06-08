@@ -379,3 +379,65 @@ header .navbar {
 #myTabContent .tabRow:last-child{
     border-bottom: none;
 }
+
+/* coming soon */
+.comingsoon{
+    background: #101010 url(./img/slide-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.comingsoon__title{
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ec7532;
+    margin: 0;
+}
+.comingsoon h3{
+    font-size: 34px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.comingsoon__rating i{
+    font-size: 14px;
+}
+.comingsoon__rating >i{
+    color: #fbbd61;
+}
+.comingsoon p {
+    margin: 1rem 0;
+}
+.comingsoon a{
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #ec7532;
+    text-decoration: none;
+    transition: all .5s;
+}
+.comingsoon a:hover{
+    color: #101010;
+}
+.comingsoon__video {
+    position: relative;
+}
+.comingsoon__video i {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    text-align: center;
+    line-height: 80px;
+    font-size: 25px;
+    border: 1px solid #ec7532;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s;
+    text-indent: 5px;
+}
+.comingsoon__video:hover i {
+    transform: translate(-50%, -50%) scale(0.9);
+}
