@@ -286,3 +286,96 @@ header .navbar {
 .newIn__title i {
     color: #fbbd61;
 }
+
+/* showtime */
+.showtime .nav-tabs{
+    border-bottom: 1px solid #d8d8d8;
+}
+.showtime .nav-tabs .nav-link {
+    border: none;
+    color: #4a4a4a;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 0;
+}
+.showtime .nav-tabs .nav-link.active {
+    color: #ec7532;
+}
+.showtime .nav-tabs .nav-link span{
+    padding: 15px 30px;
+    display: block;
+}
+.showtime .nav-tabs .nav-item.show .nav-link,
+.showtime .nav-tabs .nav-link.active {
+    border: none;
+}
+
+.showtime .nav-tabs .nav-link:focus,
+.showtime.nav-tabs .nav-link:hover {
+    border: none;
+}
+.showtime .nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+#myTabContent .showtime__img{
+    border-radius: 10px;
+}
+.showtimes__title {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ec7532;
+    margin-bottom: 0;
+}
+#myTabContent h3{
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #101010;
+}
+#myTabContent a {
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #ec7532;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+#myTabContent a:hover{
+    color: #101010;
+}
+.showtimes__viewing {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #4a4a4a;
+}
+.showtimes__viewing button {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #717171;
+    background-color: #d8d8d8;
+}
+.showtimes__runingTime {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.showtimes__runingTime span:last-child {
+    font-size: 13px;
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    color: white;
+    display: inline-block;
+    background-color: #4a4a4a;
+    border-radius: 50%;
+    font-weight: bold;
+}
+#myTabContent .tabRow{
+    border-bottom: 1px solid #d8d8d8;
+}
+#myTabContent .tabRow:last-child{
+    border-bottom: none;
+}
