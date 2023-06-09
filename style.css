@@ -148,7 +148,14 @@ header .navbar {
     padding-left: 15px;
     padding-right: 15px;
 }
-
+#MoviecarouselID .carousel__overplay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, black, transparent);
+}
 #MoviecarouselID .carousel-caption p:first-child {
     font-size: 0.875rem;
     color: #fbbd61;
@@ -462,4 +469,16 @@ header .navbar {
 }
 .movielist__overplay:hover{
     opacity: 0;
+}
+/* contact */
+.contact__content p:first-child{
+    font-size: 23px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+}
+.contact__content a{
+    font-size: 46px;
+    color: #fbbd61;
+    text-decoration: none;
 }
