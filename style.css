@@ -86,7 +86,13 @@ header .navbar {
 .line.active::after {
   width: 100%;
 }
-
+#site-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #101010;
+    transition: transform 0.5s;
+}
 /* carousel */
 #MoviecarouselID {
   height: 650px;

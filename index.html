@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="myBody">
     <!-- header -->
     <header class="container-md ">
         <p class="text-right mb-0">
@@ -40,6 +40,37 @@
             <i class="fa fa-search"></i>
         </p>
         <nav class="navbar navbar-expand-md navbar-light  ml-auto">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Movienabar"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="Movienabar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="line nav-item active">
+                        <a class="nav-link active" href="#">HOME </a>
+                    </li>
+                    <li class="line nav-item">
+                        <a class="nav-link" href="#">WHAT'S ON</a>
+                    </li>
+                    <li class="line nav-item">
+                        <a class="nav-link" href="#">SHORTCODES</a>
+                    </li>
+                    <li class="line nav-item">
+                        <a class="nav-link" href="#">NEWS</a>
+                    </li>
+                    <li class="line nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <header id="site-header">
+        <nav class="navbar navbar-expand-md navbar-light container  ml-auto">
             <a class="navbar-brand" href="#">
                 <img src="./img/logo.svg" alt="">
             </a>
@@ -734,7 +765,7 @@
                 <p>2020 © Movie Cyber / Cybersoft</p>
             </div>
         </div>
-        
+
     </footer>
 
     <!-- JQUERY JS -->
@@ -754,6 +785,19 @@
         $(document).ready(function () {
             $('.venobox').venobox();
         });
+    </script>
+    <!-- menu js -->
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.getElementById("site-header").style.transform = "translate(-50%,0)";
+            } else {
+
+                document.getElementById("site-header").style.transform = "translate(-50%,-100%)";
+            }
+        }
     </script>
 
 </body>
